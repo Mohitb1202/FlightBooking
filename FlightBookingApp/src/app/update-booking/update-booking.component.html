@@ -1,0 +1,28 @@
+<app-customer></app-customer>
+<div class="header">
+  <div class="text-center">
+    <h3 class="text-white">Update Your Details</h3>
+  </div>
+  <div class="col-md-7 container container-fluid shadow-lg">
+    <form #updateBookingForm="ngForm" (ngSubmit)="submitForm(pasTickets.value)">
+      <label>Booking Id</label>
+      <input type="number" name="bookingId" [ngModel]="bookingId" class="form-control qkinput" required ngModel />
+      <label>Passenger Name</label>
+      <input type="text" name="passengerName" [ngModel]="passengerName" class="form-control qkinput" required ngModel />
+      <label>Total Tickets</label>
+      <input type="number" name="noOfTickets" #pasTickets="ngModel" [ngModel]="noOfTickets" class="form-control qkinput" required ngModel />
+      <label>Total Amount</label>
+      <input type="number" name="totalAmount" [ngModel]="totalAmount" class="form-control qkinput" required ngModel />
+      <label>Flight Id</label>
+      <input type="text" name="flightId" [ngModel]="flightId" class="form-control qkinput" required ngModel />
+      <div class="m-5">
+        <button class="btn btn-success" [disabled]="!updateBookingForm.form.valid" type="submit">Update</button>
+        <button href="viewBookings" class="btn btn-danger m-2"> Cancel</button>
+      </div>
+      
+      
+    </form>
+  </div>
+
+</div>
+

@@ -1,0 +1,23 @@
+<app-customer></app-customer>
+<div class="header">
+  <div class="text-center text-white">
+    <h3>Welcome!! Book your Flight</h3>
+  </div>
+  <div class="col-md-7 px-5 py-5 form-group shadow-lg">
+    <form [formGroup]="bookFlightForm" (ngSubmit)="submitForm(bookFlightForm)">
+      <label>Passenger Name</label>
+      <input type="text" class="form-control" formControlName="passengerName" />
+      <label>No of Tickets</label>
+      <input type="number" class="form-control" formControlName="noOfTickets" />
+      <label>Total Amount</label>
+      <input type="number" class="form-control" formControlName="totalAmount" />
+      <label>Flight ID</label>
+      <input type="text" class="form-control" formControlName="flightId" />
+
+      <button class="m-5 btn btn-success text-white" type="submit">Book Flight</button>
+      
+    </form>
+  </div>
+</div>
+<!--(ngSubmit)="submitForm(bookFlightForm)"
+  -->

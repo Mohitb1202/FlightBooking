@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zuuSJCK51iG/pRXWdfMT7ckDrAUuvuvpFIb5pA12a4c=",
+  "Source": "FlightBookingServices",
+  "BasePath": "_content/FlightBookingServices",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

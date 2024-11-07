@@ -1,0 +1,26 @@
+<app-customer></app-customer>
+
+<body class="header">
+  <div class="px-5 py-5">
+    <div class="container">
+      <table class="table table-success table-striped">
+        <tr class="bg-primary text-white">
+          <th>Flight ID</th>
+          <th>Aircraft Name</th>
+          <th>Status</th>
+          <th>Fare</th>
+          <th>Available Seats</th>
+        </tr>
+        <tr class="box" *ngFor="let flight of flights">
+          <th>{{flight.flightId}}</th>
+          <th>{{flight.aircraftName}}</th>
+          <th>{{flight.status}}</th>
+          <th>{{flight.fare}}</th>
+          <th>{{flight.availableSeats}}</th>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+  </body>

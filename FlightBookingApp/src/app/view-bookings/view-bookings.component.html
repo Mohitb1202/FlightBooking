@@ -1,0 +1,36 @@
+<app-customer></app-customer>
+
+<body class="header">
+ 
+  <div class="px-5 py-5">
+    
+    <div class="container">
+      <table class="table table-success table-striped">
+        <tr class="bg-primary text-white">
+          <th>Booking ID</th>
+          <th>Passenger Name</th>
+          <th>Total Tickets</th>
+          <th>Total Amount</th>
+          <th>Flight ID</th>
+          <th>Update Details</th>
+          <th>Cancel Booking</th>
+        </tr>
+        <tr *ngFor="let booking of bookings">
+          <th>{{booking.bookingId}}</th>
+          <th>{{booking.passengerName}}</th>
+          <th>{{booking.noOfTickets}}</th>
+          <th>{{booking.totalAmount}}</th>
+          <th>{{booking.flightId}}</th>
+          <th><button (click)="updateDetails(booking)" class="btn btn-success text-white">Update</button></th>
+          <th><button (click)="cancelBooking(booking)" class="btn btn-danger text-white">Cancel</button></th>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+      
+  
+</body>
+
+

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FlightBookingApp",
+    "\\FlightBookingApp\\src",
+    "\\FlightBookingApp\\src\\app",
+    "\\FlightBookingApp\\src\\app\\base",
+    "\\FlightBookingApp\\src\\app\\book-flight",
+    "\\FlightBookingApp\\src\\app\\home",
+    "\\FlightBookingApp\\src\\app\\login",
+    "\\FlightBookingApp\\src\\app\\register",
+    "\\FlightBookingApp\\src\\app\\update-booking"
+  ],
+  "PreviewInSolutionExplorer": false
+}
